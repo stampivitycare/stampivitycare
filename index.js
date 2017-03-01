@@ -23,7 +23,7 @@ var api = new ParseServer({
   },
   
     verifyUserEmails: true,
-  publicServerURL: 'https://wkblocal.herokuapp.com/parse',
+  publicServerURL: 'https://stampivitycare.herokuapp.com/parse',
  // appName: 'Parse App',
   appName: 'stampivitycare App',
   emailAdapter: {
@@ -33,7 +33,7 @@ var api = new ParseServer({
  domain: process.env.MAILGUN_DOMAIN || "sandbox633a3f81d5e8448091b36001bb966377.mailgun.org",
  apiKey: process.env.MAILGUN_API_KEY || "key-b6fe80ed8ae21e1901fea443850c22d0",
  // Verification email subject
- verificationSubject: 'Please verify your e-mail for wellkeptbeauty',
+ verificationSubject: 'Please verify your e-mail for stampivitycare',
  // Verification email body
  verificationBody: 'Hi,\n\nYou are being asked to confirm the e-mail address %email% with %appname%\n\nClick here to confirm it:\n%link%',
 
