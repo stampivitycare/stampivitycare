@@ -17,7 +17,7 @@ var api = new ParseServer({
   appId: process.env.APP_ID || 'zFPohdGSb6OCDkZdexVz',
   masterKey: process.env.MASTER_KEY || '6wNRdRZmHXI6vxulxUmu', //Add your master key here. Keep it secret!
   clientKey: process.env.CLIENT_KEY || 'mleQYshRkuOmTjTk3Ly0', //Add your client key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'https://stampivitycare.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
