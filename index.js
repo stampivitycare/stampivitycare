@@ -12,7 +12,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://stampivitycare:betabulls@123@ds117819.mlab.com:17819/stampivitycare',
+  databaseURI: databaseUri || 'mongodb://stampcare:betabulls@ds117819.mlab.com:17819/stampivitycare',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'zFPohdGSb6OCDkZdexVz',
   masterKey: process.env.MASTER_KEY || '6wNRdRZmHXI6vxulxUmu', //Add your master key here. Keep it secret!
