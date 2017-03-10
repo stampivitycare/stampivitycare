@@ -4,7 +4,7 @@ Parse.Cloud.define('hello', function(req, res) {
 });
 Parse.Cloud.define("sendSMS", function(request, response) {
          
-  // var toUser = request.params.toUser;
+   var toUser = request.params.toUser;
    var msgBody = request.params.msgBody;
   // Require and initialize the Twilio module with your credentials
          
@@ -14,7 +14,8 @@ var client = require('twilio')('AC3ce509f4e270567a423b8980d6121032','9435ac4a1af
            
 // Send an SMS message
 client.sendSms({
-    to: '+919951121245',
+   // to: '+919951121245',
+  to: toUser,
     //from: '+16467627663', 
     from: '+1919975-5360',
     body: msgBody
